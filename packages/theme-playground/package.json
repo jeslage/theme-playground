@@ -1,6 +1,6 @@
 {
   "name": "theme-playground",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Select between themes and tweak them directly in a panel",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -23,7 +23,7 @@
   "author": "Johannes Eslage",
   "license": "MIT",
   "dependencies": {
-    "@theme-playground/components": "0.1.0"
+    "@theme-playground/components": "0.1.1"
   },
   "peerDependencies": {
     "react": ">=16.7.0",
