@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Textarea StyledTextarea should render correctly 1`] = `
+<label
+  className="sc-AxjAm bkYsvM"
+/>
+`;
+
+exports[`Textarea Textarea should render correctly 1`] = `
+<styled.label>
+  <Label
+    description="Testbeschreibung"
+    iconBefore={
+      <svg
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <rect
+          height="2"
+          rx="1"
+          width="12"
+          x="6"
+          y="11"
+        />
+      </svg>
+    }
+    label="Label"
+  />
+  <textarea
+    onChange={[Function]}
+    rows={10}
+    value="TestTextarea"
+  />
+</styled.label>
+`;

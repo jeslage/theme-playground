@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Label Label should render correctly 1`] = `
+<styled.div>
+  <p
+    className="label"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+    >
+      <rect
+        height="2"
+        rx="1"
+        width="12"
+        x="6"
+        y="11"
+      />
+    </svg>
+    Label
+  </p>
+  <p
+    className="description"
+  >
+    <small>
+      Testbeschreibung
+    </small>
+  </p>
+</styled.div>
+`;
+
+exports[`Label StyledLabel should render correctly 1`] = `
+<div
+  className="sc-AxjAm kexaai"
+/>
+`;

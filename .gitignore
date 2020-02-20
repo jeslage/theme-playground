@@ -1,0 +1,10 @@
+node_modules
+lib
+yarn-error.log
+.cache
+.log
+.DS_Store
+.jest-*
+lib
+coverage/
+lerna-debug.log

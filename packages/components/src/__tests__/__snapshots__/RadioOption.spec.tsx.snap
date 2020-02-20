@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioOption RadioOption should render correctly 1`] = `
+<styled.label
+  htmlFor="primary"
+>
+  <input
+    id="primary"
+    onChange={[Function]}
+    type="radio"
+    value="primary"
+  />
+  <div>
+    primary
+  </div>
+</styled.label>
+`;
+
+exports[`RadioOption RadioOption without label should render correctly 1`] = `
+<styled.label
+  htmlFor="primary"
+>
+  <input
+    id="primary"
+    onChange={[Function]}
+    type="radio"
+    value="primary"
+  />
+  <div>
+    primary
+  </div>
+</styled.label>
+`;
+
+exports[`RadioOption StyledRadioOption should render correctly 1`] = `
+<label
+  className="sc-AxjAm fEmwmh"
+/>
+`;

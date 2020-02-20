@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading Loading should render correctly 1`] = `
+<styled.div
+  isLoading={true}
+>
+  <div />
+  <span>
+    Updating
+  </span>
+</styled.div>
+`;
+
+exports[`Loading StyledLoading should render correctly 1`] = `
+<div
+  className="sc-AxjAm deQmBI"
+/>
+`;

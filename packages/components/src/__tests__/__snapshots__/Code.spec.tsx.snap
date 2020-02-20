@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Code Code should be copied 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "colors": Object {
+        "backgroundDark": "#2f2f2f",
+        "backgroundLight": "#333",
+        "base": "dark",
+        "border": "#999999",
+        "text": "#FFFFFF",
+      },
+    }
+  }
+>
+  <Code
+    value={
+      Object {
+        "theme": Object {
+          "color": "red",
+        },
+      }
+    }
+  >
+    <styled.div>
+      <div
+        className="sc-AxjAm brjcLn"
+      >
+        <div
+          className="code__wrapper"
+        >
+          <code>
+            <pre>
+              {
+  "theme": {
+    "color": "red"
+  }
+}
+            </pre>
+          </code>
+          <button
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            Copied
+          </button>
+        </div>
+      </div>
+    </styled.div>
+  </Code>
+</ThemeProvider>
+`;
+
+exports[`Code Code should render correctly 1`] = `
+<styled.div>
+  <div
+    className="code__wrapper"
+  >
+    <code>
+      <pre>
+        {
+  "theme": {
+    "color": "red"
+  }
+}
+      </pre>
+    </code>
+    <button
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Copy
+    </button>
+  </div>
+</styled.div>
+`;
+
+exports[`Code StyledCode should render correctly 1`] = `
+<div
+  className="sc-AxjAm brjcLn"
+/>
+`;

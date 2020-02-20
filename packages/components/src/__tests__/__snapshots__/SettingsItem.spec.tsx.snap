@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SettingsItem SettingsComponent should render Colorpicker 1`] = `
+<ColorPicker
+  label="colorpicker.path"
+  onChange={[Function]}
+  value="#fff"
+/>
+`;
+
+exports[`SettingsItem SettingsComponent should render Counter 1`] = `
+<Counter
+  label="counter.path"
+  onChange={[Function]}
+  value={20}
+/>
+`;
+
+exports[`SettingsItem SettingsComponent should render Input 1`] = `
+<Input
+  label="input.path"
+  onChange={[Function]}
+  value="Text"
+/>
+`;
+
+exports[`SettingsItem SettingsComponent should render Range 1`] = `
+<Range
+  label="range.path"
+  onChange={[Function]}
+  value={20}
+/>
+`;
+
+exports[`SettingsItem SettingsComponent should render Shorthand 1`] = `
+<Shorthand
+  label="shorthand.path"
+  onChange={[Function]}
+  value={
+    Object {
+      "bottom": 20,
+      "left": 20,
+      "right": 20,
+      "top": 20,
+    }
+  }
+/>
+`;
+
+exports[`SettingsItem SettingsComponent should render Switch 1`] = `
+<Switch
+  label="switch.path"
+  onChange={[Function]}
+  value={true}
+/>
+`;
+
+exports[`SettingsItem SettingsComponent should render Textarea 1`] = `
+<Textarea
+  label="textarea.path"
+  onChange={[Function]}
+  value="Textarea value"
+/>
+`;
+
+exports[`SettingsItem SettingsComponent should render null 1`] = `""`;
+
+exports[`SettingsItem StyledSettingsItem should render correctly 1`] = `
+<div
+  className="sc-AxjAm bwvmfB"
+/>
+`;

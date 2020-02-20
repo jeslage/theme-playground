@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioGroup RadioGroup should render correctly 1`] = `
+<styled.div>
+  <Label
+    label="Active Theme"
+  />
+  <RadioGroup
+    isChecked={false}
+    key=".0"
+    label="default"
+    name="themes"
+    onChange={[Function]}
+    value="default"
+  />
+  <RadioGroup
+    isChecked={false}
+    key=".1"
+    label="primary"
+    name="themes"
+    onChange={[Function]}
+    value="primary"
+  />
+</styled.div>
+`;
+
+exports[`RadioGroup RadioGroup should render nothing 1`] = `
+<styled.div>
+  <Label
+    label="Active Theme"
+  />
+</styled.div>
+`;
+
+exports[`RadioGroup StyledRadioGroup should render correctly 1`] = `
+<div
+  className="sc-AxjAm iLVQmu"
+/>
+`;

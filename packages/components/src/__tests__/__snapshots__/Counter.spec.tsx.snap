@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter Counter with decimal steps should render correctly 1`] = `
+<styled.div>
+  <Label
+    description="Testbeschreibung"
+    label="Label"
+  />
+  <div
+    className="counter__counter"
+  >
+    <button
+      aria-label="Decrease"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <rect
+          height="2"
+          rx="1"
+          width="12"
+          x="6"
+          y="11"
+        />
+      </svg>
+    </button>
+    <span>
+      <input
+        onBlur={[Function]}
+        onChange={[Function]}
+        pattern="[0-9.]*"
+        type="text"
+        value={1}
+      />
+      px
+    </span>
+    <button
+      aria-label="Increase"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <rect
+          height="2"
+          rx="1"
+          width="12"
+          x="6"
+          y="11"
+        />
+        <rect
+          height="12"
+          rx="1"
+          width="2"
+          x="11"
+          y="6"
+        />
+      </svg>
+    </button>
+  </div>
+</styled.div>
+`;
+
+exports[`Counter Counter with fixed steps should render correctly 1`] = `
+<styled.div>
+  <Label
+    description="Testbeschreibung"
+    label="Label"
+  />
+  <div
+    className="counter__counter"
+  >
+    <button
+      aria-label="Decrease"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <rect
+          height="2"
+          rx="1"
+          width="12"
+          x="6"
+          y="11"
+        />
+      </svg>
+    </button>
+    <span>
+      <input
+        onBlur={[Function]}
+        onChange={[Function]}
+        pattern="[0-9.]*"
+        type="text"
+        value={1}
+      />
+      px
+    </span>
+    <button
+      aria-label="Increase"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <rect
+          height="2"
+          rx="1"
+          width="12"
+          x="6"
+          y="11"
+        />
+        <rect
+          height="12"
+          rx="1"
+          width="2"
+          x="11"
+          y="6"
+        />
+      </svg>
+    </button>
+  </div>
+</styled.div>
+`;
+
+exports[`Counter StyledCounter should render correctly 1`] = `
+<div
+  className="sc-AxjAm hKdwgN"
+/>
+`;

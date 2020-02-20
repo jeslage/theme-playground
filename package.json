@@ -1,0 +1,66 @@
+{
+  "name": "@theme-playground/root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "lint": "lerna exec --parallel yarn lint",
+    "prettier-write": "lerna exec --parallel yarn prettier-write",
+    "type-check": "lerna exec --parallel yarn type-check",
+    "build": "lerna exec --scope @theme-playground/components yarn build && lerna exec --scope theme-playground yarn build",
+    "build:watch": "lerna exec --parallel yarn build:watch",
+    "test": "lerna exec --scope @theme-playground/components yarn test",
+    "test:update": "lerna exec --scope @theme-playground/components yarn test:update",
+    "publish:packages": "lerna publish --exact --force-publish"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "singleQuote": true
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn run type-check"
+    }
+  },
+  "lint-staged": {
+    "*.@(ts|tsx)": [
+      "yarn lint",
+      "yarn prettier-write"
+    ]
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.10.5",
+    "@types/jest": "^25.1.2",
+    "@types/node": "^13.1.1",
+    "@types/react": "16.9.17",
+    "@types/react-color": "^3.0.1",
+    "@types/react-test-renderer": "^16.9.2",
+    "@typescript-eslint/eslint-plugin": "^2.13.0",
+    "@typescript-eslint/parser": "^2.13.0",
+    "codecov": "^3.6.5",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.17.0",
+    "husky": "^3.1.0",
+    "jest": "^25.1.0",
+    "jest-styled-components": "^7.0.0",
+    "lerna": "^3.20.2",
+    "lint-staged": "^9.5.0",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-test-renderer": "^16.12.0",
+    "rimraf": "^3.0.0",
+    "styled-components": "^5.0.0",
+    "ts-jest": "^25.2.0",
+    "typescript": "^3.7.4"
+  }
+}

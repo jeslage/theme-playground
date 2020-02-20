@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Switch Disabled Switch should render correctly 1`] = `
+<styled.div
+  active={false}
+>
+  <Label
+    description="Testbeschreibung"
+    iconBefore={
+      <svg
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <rect
+          height="2"
+          rx="1"
+          width="12"
+          x="6"
+          y="11"
+        />
+      </svg>
+    }
+    label="Label"
+  />
+  <button
+    aria-checked={false}
+    onClick={[Function]}
+    role="switch"
+    type="button"
+  >
+    <span>
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 52 52"
+      >
+        <path
+          d="m19.1 19.1 l14 14 m 0 -14 l -14 14"
+        />
+      </svg>
+    </span>
+  </button>
+</styled.div>
+`;
+
+exports[`Switch Enabled Switch should render correctly 1`] = `
+<styled.div
+  active={true}
+>
+  <Label
+    description="Testbeschreibung"
+    iconBefore={
+      <svg
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <rect
+          height="2"
+          rx="1"
+          width="12"
+          x="6"
+          y="11"
+        />
+      </svg>
+    }
+    label="Label"
+  />
+  <button
+    aria-checked={true}
+    onClick={[Function]}
+    role="switch"
+    type="button"
+  >
+    <span>
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 52 52"
+      >
+        <path
+          d="m19.1 25.2 4.7 6.2 12.1-11.2"
+        />
+      </svg>
+    </span>
+  </button>
+</styled.div>
+`;
+
+exports[`Switch StyledSwitch should render correctly 1`] = `
+<div
+  className="sc-AxjAm gdUeta"
+/>
+`;

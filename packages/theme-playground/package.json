@@ -1,0 +1,45 @@
+{
+  "name": "theme-playground",
+  "version": "0.1.2",
+  "description": "Select between themes and tweak them directly in a panel",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*",
+    "README.md",
+    "*.js",
+    "*.d.ts"
+  ],
+  "scripts": {
+    "build:watch": "tsc -p . -w",
+    "build": "tsc -p .",
+    "clean": "rimraf lib",
+    "lint": "eslint ./src --ext ts --ext tsx",
+    "prepublish": "yarn prettier-write && yarn lint && yarn type-check",
+    "prepare": "yarn build",
+    "prettier-write": "prettier --write \"src/**/*.tsx\"",
+    "type-check": "tsc --pretty --noEmit"
+  },
+  "author": "Johannes Eslage",
+  "license": "MIT",
+  "dependencies": {
+    "@theme-playground/components": "0.1.2"
+  },
+  "peerDependencies": {
+    "react": ">=16.7.0",
+    "react-dom": ">=16.7.0",
+    "styled-components": ">=4.0.0"
+  },
+  "repository": "jeslage/theme-playground",
+  "homepage": "https://github.com/jeslage/theme-playground/tree/master/packages/theme-playground",
+  "bugs": "https://github.com/jeslage/theme-playground/issues",
+  "keywords": [
+    "theme",
+    "playground",
+    "react",
+    "typescript",
+    "css-in-js",
+    "styled-components"
+  ],
+  "gitHead": "c64c2e979a553be9b8cefdd24bbaa3fc181bfc99"
+}

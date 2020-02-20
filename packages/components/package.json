@@ -1,0 +1,48 @@
+{
+  "name": "@theme-playground/components",
+  "version": "0.1.2",
+  "description": "theme-playground components",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "*.js",
+    "*.d.ts"
+  ],
+  "scripts": {
+    "build:watch": "tsc -p . -w",
+    "build": "tsc -p .",
+    "clean": "rimraf lib",
+    "lint": "eslint ./src --ext ts --ext tsx",
+    "prepublish": "yarn prettier-write && yarn lint && yarn type-check",
+    "prepare": "yarn build",
+    "prettier-write": "prettier --write \"src/**/*.tsx\"",
+    "type-check": "tsc --pretty --noEmit",
+    "test": "jest --config ../../jest.config.json --maxWorkers=2",
+    "test:update": "jest --config ../../jest.config.json -u"
+  },
+  "author": "Johannes Eslage",
+  "license": "MIT",
+  "dependencies": {
+    "react-color": "^2.17.3"
+  },
+  "peerDependencies": {
+    "react": ">=16.7.0",
+    "react-dom": ">=16.7.0",
+    "styled-components": ">=4.0.0"
+  },
+  "repository": "jeslage/theme-playground",
+  "homepage": "https://github.com/jeslage/theme-playground/tree/master/packages/components",
+  "bugs": "https://github.com/jeslage/theme-playground/issues",
+  "keywords": [
+    "theme",
+    "playground",
+    "react",
+    "typescript"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "c64c2e979a553be9b8cefdd24bbaa3fc181bfc99"
+}

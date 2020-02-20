@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColorPicker ColorPicker should render correctly 1`] = `
+<styled.div>
+  <Label
+    description="Testbeschreibung"
+    iconBefore={
+      <svg
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <rect
+          height="2"
+          rx="1"
+          width="12"
+          x="6"
+          y="11"
+        />
+      </svg>
+    }
+    label="Label"
+  />
+  <div
+    className="colorPicker__wrapper"
+  >
+    <button
+      aria-label="Open color picker"
+      className="colorPicker__open"
+      onClick={[Function]}
+      type="button"
+    >
+      <span
+        style={
+          Object {
+            "background": "#000",
+          }
+        }
+      />
+    </button>
+  </div>
+</styled.div>
+`;
+
+exports[`ColorPicker StyledColorPicker should render correctly 1`] = `
+<div
+  className="sc-AxjAm jOQktQ"
+/>
+`;

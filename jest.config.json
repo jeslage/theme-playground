@@ -1,0 +1,34 @@
+{
+  "verbose": true,
+  "roots": [
+    "<rootDir>/packages/components/src",
+    "<rootDir>/packages/theme-playground/src"
+  ],
+  "transform": {
+    "^.+\\.tsx?$": "ts-jest"
+  },
+  "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+  "moduleFileExtensions": [
+    "ts",
+    "tsx",
+    "js",
+    "jsx",
+    "json",
+    "node"
+  ],
+  "snapshotSerializers": [
+    "enzyme-to-json/serializer"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/setup/enzyme.ts"
+  ],
+  "collectCoverage": true,
+  "coverageDirectory": "coverage",
+  "globals": {
+    "ts-jest": {
+      "diagnostics": {
+        "pathRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$"
+      }
+    }
+  }
+}

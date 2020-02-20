@@ -1,0 +1,8 @@
+{
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "version": "0.1.2",
+  "create": {
+    "license": "MIT"
+  }
+}

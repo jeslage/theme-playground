@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Range Range should render correctly 1`] = `
+<styled.label
+  htmlFor="Label"
+>
+  <Label
+    description="Testbeschreibung"
+    iconBefore={
+      <svg
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <rect
+          height="2"
+          rx="1"
+          width="12"
+          x="6"
+          y="11"
+        />
+      </svg>
+    }
+    label="Label"
+  />
+  <span>
+    <input
+      onBlur={[Function]}
+      onChange={[Function]}
+      pattern="[0-9.]*"
+      type="text"
+      value={1}
+    />
+    px
+  </span>
+  <input
+    max={2}
+    min={0}
+    onChange={[Function]}
+    step={0.1}
+    type="range"
+    value={1}
+  />
+</styled.label>
+`;
+
+exports[`Range StyledRange should render correctly 1`] = `
+<label
+  className="sc-AxjAm gZeeIQ"
+/>
+`;

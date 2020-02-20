@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Panel Panel should render correctly 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "activeTheme": Object {
+        "name": "__default",
+        "theme": Object {
+          "color": "red",
+        },
+      },
+      "config": Object {
+        "labelFormat": "startCase",
+        "showCode": true,
+      },
+      "getInitialOptions": [Function],
+      "isLoading": false,
+      "overrides": Object {},
+      "themeComponents": Object {},
+      "themes": Array [],
+      "updateActiveTheme": [Function],
+      "updateIsLoading": [Function],
+      "updateTheme": [Function],
+    }
+  }
+>
+  <ThemeProvider
+    theme={
+      Object {
+        "backgroundDark": "#2f2f2f",
+        "backgroundLight": "#333",
+        "base": "dark",
+        "border": "#999999",
+        "text": "#FFFFFF",
+      }
+    }
+  >
+    <Panel
+      className="panel__classname"
+    />
+  </ThemeProvider>
+</ContextProvider>
+`;
+
+exports[`Panel StyledPanel should render correctly 1`] = `
+<div
+  className="sc-fzplWN hCHpGs"
+/>
+`;
