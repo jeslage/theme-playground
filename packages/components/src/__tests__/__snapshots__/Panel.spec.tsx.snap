@@ -25,21 +25,9 @@ exports[`Panel Panel should render correctly 1`] = `
     }
   }
 >
-  <ThemeProvider
-    theme={
-      Object {
-        "backgroundDark": "#2f2f2f",
-        "backgroundLight": "#333",
-        "base": "dark",
-        "border": "#999999",
-        "text": "#FFFFFF",
-      }
-    }
-  >
-    <Panel
-      className="panel__classname"
-    />
-  </ThemeProvider>
+  <Panel
+    className="panel__classname"
+  />
 </ContextProvider>
 `;
 
