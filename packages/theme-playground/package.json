@@ -16,7 +16,7 @@
     "clean": "rimraf lib",
     "lint": "eslint ./src --ext ts --ext tsx",
     "prepublish": "yarn prettier-write && yarn lint && yarn type-check",
-    "prepare": "yarn build",
+    "prepare": "yarn clean && yarn build",
     "prettier-write": "prettier --write \"src/**/*.tsx\"",
     "type-check": "tsc --pretty --noEmit"
   },
