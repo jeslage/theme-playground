@@ -5,7 +5,8 @@ import {
   Overrides,
   ConfigProps,
   Theme,
-  UiTheme
+  UiTheme,
+  UiProvider
 } from '@theme-playground/components';
 
 import Content from './Content/Content';
@@ -32,13 +33,15 @@ function withThemePlayground<T>(
       const { theme, overrides, config, uiTheme, hide } = options;
 
       return (
-        <ThemePlaygroundProvider
-          options={{ theme, overrides, config }}
-          uiTheme={uiTheme}
-        >
+        <ThemePlaygroundProvider options={{ theme, overrides, config }}>
           {activeTheme => (
             <>
-              {!hide && <Content />}
+              {!hide && (
+                <UiProvider theme={uiTheme}>
+                  <Content />
+                </UiProvider>
+              )}
+
               <WrappedComponent
                 theme={activeTheme.theme}
                 {...(this.props as T)}

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { ThemeProvider } from 'styled-components';
 
 import { updateValueBasedOnPath } from '../helper';
 import {
@@ -14,7 +13,6 @@ import {
 } from '../definitions';
 
 import buildThemeComponents from '../helper/buildThemeComponents';
-import { getUiTheme } from '../theme';
 
 const defaultConfig = {
   labelFormat: 'startCase',
@@ -40,7 +38,6 @@ export const ThemePlaygroundContext = React.createContext<
 
 const ThemePlaygroundProvider: React.FC<ThemePlaygroundProviderProps> = ({
   options,
-  uiTheme,
   children
 }) => {
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
@@ -151,9 +148,7 @@ const ThemePlaygroundProvider: React.FC<ThemePlaygroundProviderProps> = ({
 
   return (
     <ThemePlaygroundContext.Provider value={providerValue}>
-      <ThemeProvider theme={getUiTheme(uiTheme)}>
-        {children && children(activeTheme || {})}
-      </ThemeProvider>
+      {children && children(activeTheme || {})}
     </ThemePlaygroundContext.Provider>
   );
 };

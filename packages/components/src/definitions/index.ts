@@ -36,7 +36,7 @@ export type Overrides = {
 };
 
 export type UiTheme = {
-  base: 'light' | 'dark';
+  base: 'light' | 'dark' | string;
   text?: string;
   border?: string;
   backgroundDark?: string;

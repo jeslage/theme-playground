@@ -5,7 +5,8 @@ import {
   Overrides,
   ConfigProps,
   Theme,
-  UiTheme
+  UiTheme,
+  UiProvider
 } from '@theme-playground/components';
 
 import Content from './Content/Content';
@@ -28,13 +29,15 @@ const ThemePlayground: React.FC<ThemePlaygroundProps> = ({
   children
 }) => {
   return (
-    <ThemePlaygroundProvider
-      options={{ theme, overrides, config }}
-      uiTheme={uiTheme}
-    >
+    <ThemePlaygroundProvider options={{ theme, overrides, config }}>
       {activeTheme => (
         <>
-          {!hide && <Content />}
+          {!hide && (
+            <UiProvider theme={uiTheme}>
+              <Content />
+            </UiProvider>
+          )}
+
           {children && children(activeTheme.theme || {})}
         </>
       )}

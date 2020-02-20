@@ -28,6 +28,7 @@ export { default as Shorthand } from './components/Shorthand/Shorthand';
 export { default as Switch } from './components/Switch/Switch';
 export { default as Textarea } from './components/Textarea/Textarea';
 
+export { default as UiProvider } from './contexts/UiProvider';
 export {
   default as ThemePlaygroundProvider,
   ThemePlaygroundContext,
