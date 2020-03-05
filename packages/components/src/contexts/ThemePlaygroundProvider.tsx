@@ -84,11 +84,6 @@ const ThemePlaygroundProvider: React.FC<ThemePlaygroundProviderProps> = ({
     setThemeComponents(components);
   };
 
-  React.useEffect(
-    () => updateThemeComponents(options.theme || {}, options.overrides || {}),
-    []
-  );
-
   const getInitialOptions = (options: OptionsType) => {
     const { theme, overrides, config } = options;
 
@@ -125,6 +120,10 @@ const ThemePlaygroundProvider: React.FC<ThemePlaygroundProviderProps> = ({
     },
     [activeTheme]
   );
+
+  React.useEffect(() => {
+    getInitialOptions(options);
+  }, [options.theme]);
 
   const updateActiveTheme = React.useCallback(
     ({ name, theme }: ThemeObject) => {

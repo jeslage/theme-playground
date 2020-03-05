@@ -1,5 +1,5 @@
 import * as React from 'react';
-import ChromePicker from 'react-color/lib/Chrome';
+import { ChromePicker } from 'react-color';
 
 import StyledColorPicker from './ColorPicker.style';
 import Label from '../Label/Label';
