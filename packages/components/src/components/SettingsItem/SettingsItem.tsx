@@ -4,13 +4,15 @@ import { ThemePlaygroundContext } from '../../contexts/ThemePlaygroundProvider';
 
 import { getLabel } from '../../helper';
 
-import Counter from '../Counter/Counter';
 import Colorpicker from '../ColorPicker/ColorPicker';
+import Counter from '../Counter/Counter';
 import Input from '../Input/Input';
-import Textarea from '../Textarea/Textarea';
-import Switch from '../Switch/Switch';
+import RadioGroup from '../RadioOption/RadioOption';
 import Range from '../Range/Range';
+import Select from '../Select/Select';
 import Shorthand from '../Shorthand/Shorthand';
+import Switch from '../Switch/Switch';
+import Textarea from '../Textarea/Textarea';
 
 import { StyledSettingsItem } from './SettingsItem.style';
 import { stripUnit } from '../../helper/stripUnit';
@@ -99,6 +101,25 @@ export const SettingsComponent: React.FC<ComponentProps> = ({
         <Textarea
           label={label}
           value={value}
+          onChange={val => update(path, val)}
+          {...overrideProps}
+        />
+      );
+    case 'select':
+      return (
+        <Select
+          label={label}
+          value={value}
+          onChange={val => update(path, val)}
+          {...overrideProps}
+        />
+      );
+    case 'radio':
+      return (
+        <RadioGroup
+          label={label}
+          value={value}
+          name={label}
           onChange={val => update(path, val)}
           {...overrideProps}
         />

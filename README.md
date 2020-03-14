@@ -302,6 +302,23 @@ const overrides = {
 }
 ```
 
+### RadioGroup
+
+```js
+'theme.path': {
+  type: 'radio',
+  hidden: Boolean,
+  label: String | 'Theme Path',
+  description: String | null
+  options: [
+    {
+      value: String,
+      label: String
+    }
+  ]
+}
+```
+
 ### Range
 
 ```js

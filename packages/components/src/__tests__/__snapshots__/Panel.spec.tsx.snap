@@ -33,6 +33,6 @@ exports[`Panel Panel should render correctly 1`] = `
 
 exports[`Panel StyledPanel should render correctly 1`] = `
 <div
-  className="sc-fzplWN hCHpGs"
+  className="sc-fznyAO yFwRc"
 />
 `;
