@@ -5,7 +5,7 @@ import StyledCounter from './Counter.style';
 import Label from '../Label/Label';
 
 export interface Props {
-  iconBefore?: HTMLElement;
+  iconBefore?: JSX.Element;
   label: string;
   onChange: (val: number, suffix: string | undefined) => void;
   value: number;
